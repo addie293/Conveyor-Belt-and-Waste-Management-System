@@ -1,0 +1,27 @@
+paths:
+  /GUI1:
+    summary: Visualize all the data from the internal process
+    requestBody:
+      content:
+        text/html:
+          schema:
+            type: string
+  /GUI2:
+    summary: Visualize and edit all the data from the internal process
+    requestBody:
+      content:
+        text/html:
+          schema:
+            type: string
+  /COM2:
+    summary: get data from the internal process
+    requestBody:
+      content:
+        application/json:
+          schema:
+            type: array
+    responses:
+      '200':
+        description: OK
+      '400':
+        description: resource non existent

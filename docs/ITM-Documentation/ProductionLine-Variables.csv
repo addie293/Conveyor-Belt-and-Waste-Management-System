@@ -1,0 +1,410 @@
+NOM,TYPE VARIABLES,TYPE DE DONNEES,ADRESSE,COMMENTAIRES
+Syst_Rearme_KA1,Table de variables standard,Bool,%I0.0,Arrêt d'Urgence
+AxeX_Fdc_Arriere_B1,Table de variables standard,Bool,%I0.1,Axe X fin de course Arriere
+AxeX_Fdc_Avant_B2,Table de variables standard,Bool,%I0.2,Axe X fin de course Arriere
+AxeX_Ref_B3,Table de variables standard,Bool,%I0.3,Axe X référencement
+AxeZ_Fdc_Bas_B4,Table de variables standard,Bool,%I0.4,Axe Z fin de course Bas
+AxeZ_Fdc_Haut_B5,Table de variables standard,Bool,%I0.5,Axe Z fin de course Haut
+AxeZ_Ref,Table de variables standard,Bool,%I0.6,Axe Z référencement
+AxeX_OK,Table de variables standard,Bool,%I0.7,Axe X Abesence de défaut
+AxeZ_OK,Table de variables standard,Bool,%I1.0,Axe Z Abesence de défaut
+Demande_Acces,Table de variables standard,Bool,%I1.1,deamnde d'ouverture des portes
+Verin_Sas_Rentree,Table de variables standard,Bool,%I1.2,Vérin sas de sortie rentrée
+Défaut_var_convoyeur,Table de variables standard,Bool,%I1.3,Défaut variateur convoyeur
+Pots_Sas_Sortie,Table de variables standard,Bool,%I1.4,Présence dans le sas de sortie
+Pots_Sortie_Sas,Table de variables standard,Bool,%I1.5,Pots en sortie du sas
+Portes_Ouvertes,Table de variables standard,Bool,%I2.0,Porte ouverte
+Reserve,Table de variables standard,Bool,%I2.1,Défaut Inibition en entrée
+Defaut_Inhib_Sortie_,Table de variables standard,Bool,%I2.2,Défaut Inibition en sortie
+Reserve(1),Table de variables standard,Bool,%I2.3,
+Reserve(2),Table de variables standard,Bool,%I2.4,
+Reserve(3),Table de variables standard,Bool,%I2.5,
+Reserve(4),Table de variables standard,Bool,%I2.6,
+Reserve(5),Table de variables standard,Bool,%I2.7,
+Position_Y_Brut,Table de variables standard,Int,%IW68,
+Mesure_distance_Pot,Table de variables standard,Int,%IW71,
+Pression_Air,Table de variables standard,Int,%IW84,
+Tag_2,Table de variables standard,Word,%IW48,
+Tag_5,Table de variables standard,DWord,%ID76,
+Tag_7,Table de variables standard,Int,%IW78,
+Accu_Aval_B17,Table de variables standard,Bool,%I82.0,
+AxeX_Puls_U3,Table de variables standard,Bool,%Q0.0,Axe X impulsions
+AxeX_Dir_U3,Table de variables standard,Bool,%Q0.1,Axe X sens de marche
+AxeZ_Puls_U4,Table de variables standard,Bool,%Q0.2,Axe Z impulsions
+AxeX_Enable_U3,Table de variables standard,Bool,%Q0.4,Activation carte d'axe X
+AxeZ_Dir_U4,Table de variables standard,Bool,%Q0.3,Axe Z sens de marche
+AxeZ_Enable_U4,Table de variables standard,Bool,%Q0.5,Activation carte d'axe Z
+Marche_Conv_U2,Table de variables standard,Bool,%Q0.6,Marche convoyeur à bande
+Vérine_Verte,Table de variables standard,Bool,%Q0.7,Vérine verte
+Absence_défaut_Axes,Table de variables standard,Bool,%Q1.0,Pas de défaut sur cartes d'axes autorisation réarmement
+Autorisation_ouverture,Table de variables standard,Bool,%Q1.1,Autorisation ouverture aprés arrêt du système
+Sortir_Verin_Sas_Sortie,Table de variables standard,Bool,%Q2.0,Sortir vérin sas de sortie
+Ouverture_Pinces,Table de variables standard,Bool,%Q2.1,Ouverture pinces de préhension
+Fermeture_Pinces,Table de variables standard,Bool,%Q2.2,Fermeture pinces de préhension
+Sortir_AxeY,Table de variables standard,Bool,%Q2.3,Sortir axe Y
+Rentrer_AxeY,Table de variables standard,Bool,%Q2.4,Rentrer axe Y
+Déblocage_Frein_AxeZ,Table de variables standard,Bool,%Q2.5,Déblocage du frein de l'axe Z
+Réserve,Table de variables standard,Bool,%Q2.6,Réserve
+Réserve(1),Table de variables standard,Bool,%Q2.7,Réserve
+Consigne variateur convoyeur,Table de variables standard,Int,%QW4,Consigne de vitesse variateur convoyeur pots personnalisés
+Tag_3,Table de variables standard,Bool,%Q70.0,
+Tag_4,Table de variables standard,Bool,%Q70.1,
+Tag_6,Table de variables standard,Word,%QW70,
+Etape MARCHE G7 Sécurité,Table de variables standard,Bool,%M0.0,Etape Marche du Grafcet de Sécurité
+Etape AU G7 Sécurité,Table de variables standard,Bool,%M0.1,Etape Arrêt d'Urgence du Grafcet de Sécurité
+FirstScan,Table de variables standard,Bool,%M65.0,Premier cycle
+DiagStatusUpdate,Table de variables standard,Bool,%M65.1,Diagramme de diagnostic modifié
+AlwaysTRUE,Table de variables standard,Bool,%M65.2,Bit toujours à vrai
+AlwaysFALSE,Table de variables standard,Bool,%M65.3,Bit toujours à faux
+Clock_10Hz,Table de variables standard,Bool,%M66.0,Cadence 10Hz
+Clock_5Hz,Table de variables standard,Bool,%M66.1,Cadence 5Hz
+Clock_2.5Hz,Table de variables standard,Bool,%M66.2,"Cadence 2,5Hz"
+Clock_2Hz,Table de variables standard,Bool,%M66.3,Cadence 2Hz
+Clock_1.25Hz,Table de variables standard,Bool,%M66.4,"Cadence 1,25Hz"
+Clock_1Hz,Table de variables standard,Bool,%M66.5,Cadence 1Hz
+Clock_0.625Hz,Table de variables standard,Bool,%M66.6,"Cadence 0,625Hz"
+Clock_0.5Hz,Table de variables standard,Bool,%M66.7,"Cadence 0,5Hz"
+System_Byte,Table de variables standard,Byte,%MB65,Octet de mémento système
+Clock_Byte,Table de variables standard,Byte,%MB66,Octet de mémento de cadence
+Mise_sous_puissance_X,Table de variables standard,Bool,%M500.0,Enable_MC_Power_X
+Appel page pupitre,Table de variables standard,Int,%MW112,Appel des pages du pupitre à afficher
+Execute_Home_Axe_X,Table de variables standard,Bool,%M500.3,Execute_MC_Home_X
+Position_MC_Home_X,Table de variables standard,Real,%MD514,Position_MC_Home_X
+Mode_MC_Home_X,Table de variables standard,Int,%MW518,Mode_MC_Home_X
+Execute_Reset_Axe_X,Table de variables standard,Bool,%M500.4,
+Mise_sous_puissance_Y,Table de variables standard,Bool,%M502.0,Enable_MC_Power_Y
+Execute_Home_Axe_Y,Table de variables standard,Bool,%M502.3,Execute_MC_Home_Y
+Execute_Reset_Y,Table de variables standard,Bool,%M502.4,
+Mise_sous_puissance_Z,Table de variables standard,Bool,%M504.0,Enable_MC_Power_Z
+Execute_Home_Axe_Z,Table de variables standard,Bool,%M504.3,Execute_MC_Home_Z
+Execute_Reset_Z,Table de variables standard,Bool,%M504.4,
+Bouton Marche U2,Table de variables standard,Bool,%M33.0,Bouton Marche variateur convoyeur pots personnalisés
+Bouton Arrêt U2,Table de variables standard,Bool,%M33.1,Bouton Arrêt variateur convoyeur pots personnalisés
+Bouton Rentrer Y2,Table de variables standard,Bool,%M33.2,Bouton Rentrer vérin magasin gravitaire
+Bouton Sortir Y2,Table de variables standard,Bool,%M33.3,Bouton Sortir vérin magasin gravitaire
+Bouton Rentrer Y3,Table de variables standard,Bool,%M33.4,Bouton Rentrer vérin SAS pots personnalisés
+Bouton Sortir Y3,Table de variables standard,Bool,%M33.5,Bouton Sortir vérin SAS pots personnalisés
+Bouton Rentrer Y4,Table de variables standard,Bool,%M33.6,Bouton Rentrer vérin SAS barquette
+Bouton Sortir Y4,Table de variables standard,Bool,%M33.7,Bouton Sortir vérin SAS barquette
+Bouton Aspirer Y5,Table de variables standard,Bool,%M34.0,Bouton Aspirer ventouses du portique
+Bouton Arrêt Y5,Table de variables standard,Bool,%M34.1,Bouton Arrêt aspiration ventouses du portique
+Bouton Souffler Y6,Table de variables standard,Bool,%M34.2,Bouton Souffler ventouses du portique
+Bouton Arrêt Y6,Table de variables standard,Bool,%M34.3,Bouton Arrêt soufflage ventouses du portique
+Visu bouton Marche U2,Table de variables standard,Bool,%M36.0,Visualisation du bouton Marche variateur convoyeur pots personnalisés
+Visu bouton Arrêt U2,Table de variables standard,Bool,%M36.1,Visualisation du bouton Arrêt variateur convoyeur pots personnalisés
+Visu bouton Rentrer Y2,Table de variables standard,Bool,%M36.2,Visualisation du bouton Rentrer vérin magasin gravitaire
+Visu bouton Sortir Y2,Table de variables standard,Bool,%M36.3,Visualisation du bouton Sortir vérin magasin gravitaire
+Visu bouton Rentrer Y3,Table de variables standard,Bool,%M36.4,Visualisation du bouton Rentrer vérin SAS pots personnalisés
+Visu bouton Sortir Y3,Table de variables standard,Bool,%M36.5,Visualisation du bouton Sortir vérin SAS pots personnalisés
+Visu bouton Rentrer Y4,Table de variables standard,Bool,%M36.6,Visualisation du bouton Rentrer vérin SAS barquette
+Visu bouton Sortir Y4,Table de variables standard,Bool,%M36.7,Visualisation du bouton Sortir vérin SAS barquette
+Visu bouton Aspirer Y5,Table de variables standard,Bool,%M37.0,Visualisation du bouton Aspirer ventouses du portique
+Visu bouton Arrêt Y5,Table de variables standard,Bool,%M37.1,Visualisation du bouton Arrêt aspiration ventouses du portique
+Visu bouton Souffler Y6,Table de variables standard,Bool,%M37.2,Visualisation du bouton Souffler ventouses du portique
+Visu bouton Arrêt Y6,Table de variables standard,Bool,%M37.3,Visualisation du bouton Arrêt soufflage du portiques
+Bouton Marche,Table de variables standard,Bool,%M30.0,Bouton Marche
+Bouton Arrêt,Table de variables standard,Bool,%M30.1,Bouton Arrêt 
+Bouton Mode Manuel,Table de variables standard,Bool,%M30.2,Bouton Mode Manuel 
+Bouton Initialisation,Table de variables standard,Bool,%M30.3,Bouton Initialisation
+Bouton Validation,Table de variables standard,Bool,%M30.4,Bouton Validation
+Bouton Paramètres,Table de variables standard,Bool,%M30.5,Bouton Paramètres
+Visu bouton Marche_pupitre,Table de variables standard,Bool,%M80.0,Visualisation du bouton Marche sur le pupitre opérateur
+Visu bouton Arrêt_pupitre,Table de variables standard,Bool,%M80.1,Visualisation du bouton Arrêt sur le pupitre opérateur
+Visu bouton Mode Manuel_pupitre,Table de variables standard,Bool,%M80.2,Visualisation du bouton Mode Manuel sur le pupitre opérateur
+Visu bouton Initialisation_pupitre,Table de variables standard,Bool,%M80.3,Visualisation du bouton Initialisation sur le pupitre opérateur
+Visu bouton Validation_pupitre,Table de variables standard,Bool,%M80.4,Visualisation du bouton Validation sur le pupitre opérateur
+Visu bouton Paramètres_pupitre,Table de variables standard,Bool,%M80.5,Visualisation du bouton Paramètres sur le pupitre opérateur
+Visu Automatique Pas à Pas,Table de variables standard,Bool,%M32.1,Visualisation du commutateur Automatique/Pas à Pas
+Bouton Sortir Manuel,Table de variables standard,Bool,%M30.7,Bouton Sortir Mode Manuel
+Bouton Sortir Paramètres,Table de variables standard,Bool,%M30.6,Bouton Sortir Paramètres
+Visu Automatique Pas à Pas_pupitre,Table de variables standard,Bool,%M80.6,Visualisation du commutateur Automatique/Pas à Pas sur le pupitre opérateur
+Automatique Pas à Pas,Table de variables standard,Bool,%M32.0,Commutateur Automatique/Pas à Pas
+Autorisation marche,Table de variables standard,Bool,%M26.5,Autorisation évolution Grafcets en mode
+CI_PC,Table de variables standard,Bool,%M27.6,Conditions initiales de la Partie Commande
+CI_PO,Table de variables standard,Bool,%M27.2,Condtions initiales Partie Opérative
+Conditions initiales,Table de variables standard,Bool,%M26.1,Conditions initiales
+Consigne calculée vitesse convoyeur pots personnalisés,Table de variables standard,Int,%MW148,Consigne calculée pour la vitesse du convoyeur pots
+Cycle en cours,Table de variables standard,Bool,%M26.0,Cycle en cours
+Demande de Marche,Table de variables standard,Bool,%M26.3,Demande de Marche
+Demande d'Initialisation,Table de variables standard,Bool,%M26.4,Demande d'Initialisation
+Demande remplissage barquette,Table de variables standard,Bool,%M27.4,Demande remplissage barquette
+Fin de cycle,Table de variables standard,Bool,%M28.5,Gestion de la fin du cycle
+Initialisation Grafcets,Table de variables standard,Bool,%M26.2,Initilisation des Grafcets (Hors Sécurité)
+Mémo front descendant tempo soufflage ventouses,Table de variables standard,Bool,%M300.0,Mémo front descendant tempo soufflage ventouses TP
+Mémo front montant I0.5_U3_INP Axe X,Table de variables standard,Bool,%M300.1,Axe X position atteinte
+Mémo front montant I1.1_U4_INP Axe Y,Table de variables standard,Bool,%M300.2,Axe Y position atteinte
+Mémo front montant I1.5_U4_INP Axe Z,Table de variables standard,Bool,%M300.3,Axe Z position atteinte
+Mémo numéro trajectoire SAS barquette,Table de variables standard,Int,%MW74,Mémo numéro trajectoire SAS barquette
+Mémorisation 1er démarrage,Table de variables standard,Bool,%M28.7,Mémorisation mise sous tension machine
+Modes de marche,Table de variables standard,Int,%MW104,"Mode de Marche: 0=Automatique/Pas à Pas, 1=Vidange"
+Num_Etape_ G7_Barquettes_Magasin_Gravitaire,Table de variables standard,Int,%MW14,Num_Etape_ G7_Barquettes_Magasin_Gravitaire
+Num_Etape_ G7_Destockage_Stockage,Table de variables standard,Int,%MW10,Numéro d'étape du grafcet Remplissage Barquettes
+Num_Etape_ G7_SAS_pots_personnalisés,Table de variables standard,Int,%MW12,Numéro d'étape du grafcet SAS pots personnalisés
+Num_Etape_G7_Conduite,Table de variables standard,Int,%MW22,Numéro d'étape du grafcet de Conduite
+Num_Etape_G7_Initialisation,Table de variables standard,Int,%MW24,Numéro d'étape du grafcet d'Initialisation
+Numéro message pupitre,Table de variables standard,Int,%MW102,Numéro message pupitre à afficher
+Numéro page pupitre affichée,Table de variables standard,Int,%MW100,Numéro de la page affichée sur le pupitre
+Référencement_Manu_Y,Table de variables standard,Bool,%M170.1,Position atteinte X poste 1 dépose barquette
+Référencement_Manu_Z,Table de variables standard,Bool,%M170.2,Position atteinte X poste 2 dépose barquette
+Référencement_Manu_X,Table de variables standard,Bool,%M170.0,Position atteinte X poste prise barquette
+Recette,Table de variables standard,Int,%MW146,consigne du nombre de pots pour une recette
+Recette + 1,Table de variables standard,Int,%MW154,Gestion de la fin de la recette
+Consigne vitesse convoyeur,Table de variables standard,Real,%MD200,Saisie de la consigne de vitesse du convoyeur pots personnalisés
+Synchro_Arrêt,Table de variables standard,Bool,%M27.7,Synchronisation Arrêt
+Type de produits,Table de variables standard,Int,%MW106,Type de produits : petits pots ou grands pots
+Alarmes opérateur,Table de variables standard,Int,%MW40,Alarmes opérateur pour pupitre
+Défauts,Table de variables standard,Int,%MW42,Défauts critiques pour pupitre
+Alarme opérateur 10 produits consécutifs non conformes,Table de variables standard,Bool,%M40.0,Alarme opérateur 10 produits consécutifs non conformes
+Alarme opérateur bourrage sortie contenants,Table de variables standard,Bool,%M41.0,"Bit de déclenchement de l'alarme opérateur ""Bourrage sortie contenants"""
+Alarme opérateur Défaut prise produits,Table de variables standard,Bool,%M41.1,"Bit de déclenchement de l'alarme opérateur ""Défaut de la prise produits"""
+Alarme opérateur Défaut évacuation produit,Table de variables standard,Bool,%M41.2,"Bit de déclenchement de l'alarme opérateur ""Défaut évacuation produit"""
+Alarme opérateur bac échantillons plein,Table de variables standard,Bool,%M41.3,"Bit de déclenchement de l'alarme opérateur ""Bac échantillons plein"""
+Alarme opérateur défaut manque contenant,Table de variables standard,Bool,%M41.4,"Bit de déclenchement de l'alarme opérateur ""Défaut manque contenant"""
+Alarme opérateur défaut manque produit,Table de variables standard,Bool,%M41.5,"Bit de déclenchement de l'alarme opérateur ""Défaut manque produit"""
+Alarme opérateur defaut encodage rfid,Table de variables standard,Bool,%M41.6,"Bit de déclenchement de l'alarme opérateur ""defaut encodage rfid"""
+Alarme opérateur defaut presence rfid,Table de variables standard,Bool,%M41.7,"Bit de déclenchement de l'alarme opérateur ""defaut presence rfid"""
+Défaut défaut Air,Table de variables standard,Bool,%M43.1,"Bit de déclenchement du défaut critique ""Défaut Air"""
+Défaut controleur d'axe,Table de variables standard,Bool,%M43.2,"Bit de déclenchement du défaut critique ""Défaut moteur convoyeur produits"""
+Défaut critique moteur convoyeur,Table de variables standard,Bool,%M43.3,"Bit de déclenchement du défaut critique ""Défaut moteur convoyeur contenants"""
+Front_KA1,Table de variables standard,Bool,%M44.4,"Bit de déclenchement du défaut critique ""Défaut moteur table de distribution"""
+Front_Execute_X,Table de variables standard,Bool,%M44.5,"Bit de déclenchement du défaut critique ""Défaut entraînements du robot"""
+Front_Execute_Y,Table de variables standard,Bool,%M44.6,"Bit de déclenchement du défaut critique ""Défaut zone de travail carter gauche"""
+Front_Execute_Z,Table de variables standard,Bool,%M44.7,"Bit de déclenchement du défaut critique ""Défaut zone de travail carter avant"""
+Défaut critique Arrêt d'Urgence,Table de variables standard,Bool,%M43.0,"Bit de déclenchement du défaut critique ""Arrêt d'urgence"""
+Visu Bouton OUI_pupitre,Table de variables standard,Bool,%M81.0,Visualisation du bouton OUI sur le pupitre opérateur
+Visu Bouton NON_pupitre,Table de variables standard,Bool,%M81.1,Visualisation du bouton NON sur le pupitre opérateur
+Front_Réf_X,Table de variables standard,Bool,%M300.4,Mémo front montant done MC_Home_X
+Front_Réf_Y,Table de variables standard,Bool,%M300.5,Mémo front montant done MC_Home_Y
+Front_Réf_Z,Table de variables standard,Bool,%M300.6,Mémo front montant done MC_Home_Z
+Bit mémoire 1,Table de variables standard,Bool,%M320.0,Mémo front montant done MC_Home_X
+Bit mémoire 2,Table de variables standard,Bool,%M320.1,Mémo front montant done MC_Home_Y
+Mémo_Etape103,Table de variables standard,Bool,%M27.0,Mémorisation étape 103 grafcet conduite
+Mémo_Etape107,Table de variables standard,Bool,%M27.1,Mémorisation étape 107 grafcet conduite
+Valeur compteur produits,Table de variables standard,Int,%MW120,Valeur courante du compteur produits pour la supervision
+Valeur compteur personnalisation 2,Table de variables standard,Int,%MW122,Valeur courante du compteur personnalisation 2 pour la supervision
+Valeur compteur personnalisation 3,Table de variables standard,Int,%MW124,Valeur courante du compteur personnalisation 3 pour la supervision
+Compteur de marche en s,Table de variables standard,Int,%MW128,Valeur courante du compteur horaire de marche (secondes) pour la supervision
+Compteur de marche en min,Table de variables standard,Int,%MW130,Valeur courante du compteur horaire de marche (minutes) pour la supervision
+Compteur de marche en h,Table de variables standard,Int,%MW132,Valeur courante du compteur horaire de marche (heures) pour la supervision
+Compteur d'arrêt en s,Table de variables standard,Int,%MW134,Valeur courante du compteur horaire d'arrêt (secondes) pour la supervision
+Compteur d'arrêt en min,Table de variables standard,Int,%MW136,Valeur courante du compteur horaire d'arrêt (minutes) pour la supervision
+Compteur d'arrêt en h,Table de variables standard,Int,%MW138,Valeur courante du compteur horaire d'arrêt (heures) pour la supervision
+Compteur horaire en s,Table de variables standard,Int,%MW140,Valeur courante du compteur horaire (secondes) pour la supervision
+Compteur horaire en min,Table de variables standard,Int,%MW142,Valeur courante du compteur horaire (minutes) pour la supervision
+Compteur horaire en h,Table de variables standard,Int,%MW144,Valeur courante du compteur horaire (heures) pour la supervision
+Valeur compteur personnalisation 4,Table de variables standard,Int,%MW150,Valeur courante du compteur personnalisation 4 pour la supervision
+Valeur compteur rebut,Table de variables standard,Int,%MW156,Valeur courante du compteur rebut pour la supervision
+Valeur compteur couvercle sans personnalisation,Table de variables standard,Int,%MW158,Valeur courante du compteur couvercle sans personnalisation pour la supervision
+Vitesse_Déplacement_X,Table de variables standard,Real,%MD220,Mémo position X commande MC_MoveAbsolute
+Vitesse_Déplacement_Y,Table de variables standard,Real,%MD224,Mémo position Y commande MC_MoveAbsolute
+Vitesse_Déplacement_Z,Table de variables standard,Real,%MD228,Mémo position Z commande MC_MoveAbsolute
+Trajectoires portique,Table de variables standard,Int,%MW152,Trajectoire en cours du portique
+Nombre de pots personnalisés,Table de variables standard,Int,%MW108,Nombre total de pots personnalisés
+Axe_X_position_Int,Table de variables standard,Int,%MW182,Axe_X_position pour IHM
+Axe_Y_position_Int,Table de variables standard,Int,%MW184,Axe_Y_position pour IHM
+Axe_Z_position_Int,Table de variables standard,Int,%MW186,Axe_Z_position pour IHM
+Destination_Axe_X,Table de variables standard,Real,%MD188,Destination sur l'axe X
+Destination_Axe_Y,Table de variables standard,Real,%MD192,Destination sur l'axe Y
+Destination_Axe_Z,Table de variables standard,Real,%MD196,Destination sur l'axe Z
+Vitesse Jog X,Table de variables standard,Real,%MD232,Vitesse Jog X
+Vitesse Jog Y,Table de variables standard,Real,%MD236,Vitesse Jog Y
+Vitesse Jog Z,Table de variables standard,Real,%MD240,Vitesse Jog Z
+Mémo_Réf_X,Table de variables standard,Bool,%M170.3,Position atteinte X poste 3 dépose barquette
+Mémo_Réf_Y,Table de variables standard,Bool,%M170.4,Position atteinte X poste 4 dépose barquette
+Manu + X,Table de variables standard,Bool,%M180.0,Manu + X
+Manu + Y,Table de variables standard,Bool,%M180.1,Manu + Y
+Manu + Z,Table de variables standard,Bool,%M180.2,Manu + Z
+BP Manu + X,Table de variables standard,Bool,%M180.3,BP Manu + X
+BP Manu + Y,Table de variables standard,Bool,%M180.4,BP Manu + Y
+BP Manu + Z,Table de variables standard,Bool,%M180.5,BP Manu + Z
+Manu - X,Table de variables standard,Bool,%M180.6,Manu - X
+Manu - Y,Table de variables standard,Bool,%M180.7,Manu - Y
+Manu - Z,Table de variables standard,Bool,%M181.0,Manu - Z
+BP Manu - X,Table de variables standard,Bool,%M181.1,BP Manu - X
+BP Manu - Y,Table de variables standard,Bool,%M181.2,BP Manu - Y
+BP Manu - Z,Table de variables standard,Bool,%M181.3,BP Manu - Z
+Position départ X,Table de variables standard,Bool,%M181.4,Position départ X
+Position départ Y,Table de variables standard,Bool,%M181.5,Position départ Y
+Position départ Z,Table de variables standard,Bool,%M181.6,Position départ Z
+Numéro trajectoire pots,Table de variables standard,Int,%MW160,Trajectoire SAS barquette 1 2 3 ou 4
+Axe_X_destination,Table de variables standard,Real,%MD244,Destination pour fonction MC_MoveAbsolute X
+Axe_Y_destination,Table de variables standard,Real,%MD248,Destination pour fonction MC_MoveAbsolute Y
+Axe_Z_destination,Table de variables standard,Real,%MD252,Destination pour fonction MC_MoveAbsolute Z
+Mémo Position_X Atteinte,Table de variables standard,Bool,%M300.7,
+Mémo Position_Y Atteinte,Table de variables standard,Bool,%M301.0,
+Mémo Position_Z Atteinte,Table de variables standard,Bool,%M301.1,
+Bit mémoire 3,Table de variables standard,Bool,%M320.2,Mémo front montant done MC_Home_Z
+Front__X,Table de variables standard,Bool,%M320.3,Mémo front montant done MC_MoveAbsolute_X
+Front__Y,Table de variables standard,Bool,%M320.4,Mémo front montant done MC_MoveAbsolute_Y
+Front__Z,Table de variables standard,Bool,%M320.5,Mémo front montant done MC_MoveAbsolute_Z
+Execute_Déplacement_X,Table de variables standard,Bool,%M500.5,
+Execute_Déplacement_Y,Table de variables standard,Bool,%M502.5,
+Execute_Déplacement_Z,Table de variables standard,Bool,%M504.5,
+Attente validation 1,Table de variables standard,Bool,%M26.6,Attente validation 1 grafcet initialisation
+Bit mémoire 7,Table de variables standard,Bool,%M320.6,Front montant étape = 200 grafcet remplissage barquette
+Bit mémoire 8,Table de variables standard,Bool,%M320.7,Front montant étape = 200 grafcet remplissage barquette
+Bit mémoire 9,Table de variables standard,Bool,%M321.0,Front montant étape = 200 grafcet remplissage barquette
+Bit mémoire 10,Table de variables standard,Bool,%M321.1,
+Axe_X_Prêt,Table de variables standard,Bool,%M45.0,
+Axe_X_Référencé,Table de variables standard,Bool,%M45.1,
+Axe_X_En_Défaut,Table de variables standard,Bool,%M45.2,
+Axe_X_Position_Atteinte,Table de variables standard,Bool,%M54.3,
+Axe_Y_Prêt,Table de variables standard,Bool,%M54.4,
+Axe_Y_Référencé,Table de variables standard,Bool,%M54.5,
+Axe_Y_En_Défaut,Table de variables standard,Bool,%M54.6,
+Axe_Y_Position_Atteinte,Table de variables standard,Bool,%M54.7,
+Axe_Z_Prêt,Table de variables standard,Bool,%M55.0,
+Axe_Z_Référencé,Table de variables standard,Bool,%M55.1,
+Axe_Z_En_Défaut,Table de variables standard,Bool,%M55.2,
+Axe_Z_Postion_Atteinte,Table de variables standard,Bool,%M55.3,
+Front_Position_X_Atteinte,Table de variables standard,Bool,%M301.2,
+Front_Position_Y_Atteinte,Table de variables standard,Bool,%M301.3,
+Front_Position_Z_Atteinte,Table de variables standard,Bool,%M301.4,
+Front_Descendant_X_Atteint,Table de variables standard,Bool,%M50.0,
+Front_Descendant_Y_Atteint,Table de variables standard,Bool,%M50.1,
+Front_Descendant_Z_Atteint,Table de variables standard,Bool,%M50.2,
+BP_SUITE,Table de variables standard,Bool,%M181.7,
+Mémo_Réf_Z,Table de variables standard,Bool,%M170.5,
+BP Pause,Table de variables standard,Bool,%M321.2,
+Position_Actuelle_X,Table de variables standard,Real,%MD260,
+Position_Actuelle_Y,Table de variables standard,Real,%MD264,
+Position_Actuelle_Z,Table de variables standard,Real,%MD268,
+Front_Pos_depart_X_manu,Table de variables standard,Bool,%M301.5,
+Front_Pos_depart_Y_manu,Table de variables standard,Bool,%M301.6,
+Front_Pos_depart_Z_manu,Table de variables standard,Bool,%M301.7,
+Memo_pos_depart_X,Table de variables standard,Bool,%M302.0,
+Memo_pos_depart_Y,Table de variables standard,Bool,%M302.1,
+Front_Pas_a_Pas,Table de variables standard,Bool,%M321.3,
+Synchro_pas_à_pas,Table de variables standard,Bool,%M321.4,
+Memo_pos_depart_Z,Table de variables standard,Bool,%M302.2,
+Front_Ton_réf_Z,Table de variables standard,Bool,%M302.3,
+Déplacement_Manu_X_+,Table de variables standard,Bool,%M302.4,
+Déplacement_Manu_X_-,Table de variables standard,Bool,%M302.5,
+Déplacement_Manu_Y_+,Table de variables standard,Bool,%M302.6,
+Déplacement_Manu_Y_-,Table de variables standard,Bool,%M302.7,
+Déplacement_Manu_Z_+,Table de variables standard,Bool,%M303.0,
+Déplacement_Manu_Z_-,Table de variables standard,Bool,%M303.1,
+Front_Ton_réf,Table de variables standard,Bool,%M303.2,
+Visu boutons réf XY,Table de variables standard,Bool,%M80.7,
+Front comptage pots,Table de variables standard,Bool,%M303.3,
+Compteur pots,Table de variables standard,Int,%MW322,
+Compteur Barquette,Table de variables standard,Int,%MW324,
+Front compteur barquette,Table de variables standard,Bool,%M303.4,
+RAZ Compteur produits,Table de variables standard,Bool,%M34.4,
+RAZ Compteur barquettes,Table de variables standard,Bool,%M34.5,
+Visu bouton réf X,Table de variables standard,Bool,%M37.4,
+Visu bouton réf Y,Table de variables standard,Bool,%M37.5,
+Visu boutons manu X,Table de variables standard,Bool,%M37.6,
+Visu boutons manu Y,Table de variables standard,Bool,%M37.7,
+Consigne vitesse portique,Table de variables standard,Int,%MW326,
+Front arret convoyeur,Table de variables standard,Bool,%M303.5,
+Front init manu,Table de variables standard,Bool,%M303.6,
+Défauts Axes,Table de variables standard,Bool,%M321.5,Défaut globale Axes
+Visu bp pause,Table de variables standard,Bool,%M81.2,
+Front Compt Recette,Table de variables standard,Bool,%M303.7,
+Front RAZ Recette,Table de variables standard,Bool,%M304.0,
+Défaut prise pots,Table de variables standard,Bool,%M170.6,
+Accumulation_Aval,Table de variables standard,Bool,%M321.6,
+Front_Mont_Accu_Aval,Table de variables standard,Bool,%M304.1,
+Front_Desc_Accu_Aval,Table de variables standard,Bool,%M304.2,
+Mémo_def_prise_pots,Table de variables standard,Bool,%M304.3,
+Front_BP_Validation,Table de variables standard,Bool,%M304.4,
+Index_Tempo_vitesse,Table de variables standard,DInt,%MD328,
+Mémo_Défaut_Axe,Table de variables standard,Bool,%M170.7,
+Alarme_Accumulation_Aval,Table de variables standard,Bool,%M43.4,
+Alarme Défaut prise pot(s),Table de variables standard,Bool,%M43.5,
+Défaut_Prise_Produits,Table de variables standard,Bool,%M43.6,
+Alarme_Absence_barqette_Prise,Table de variables standard,Bool,%M43.7,
+RAZ Compteurs Horaire,Table de variables standard,Bool,%M34.6,
+Bouton Sortie Manu,Table de variables standard,Bool,%M34.7,
+Memo mode manu,Table de variables standard,Bool,%M304.5,
+Memo Initialisation en cours,Table de variables standard,Bool,%M304.6,
+Nombre_d'arret,Table de variables standard,Int,%MW162,
+Duree_Arret_En_Cours,Table de variables standard,Int,%MW164,
+Duree_Arrets_Cumules,Table de variables standard,Int,%MW166,
+Front_N_Arret,Table de variables standard,Bool,%M504.6,
+Front_arret_en_cours,Table de variables standard,Bool,%M504.7,
+Compteur_Horaire_secondes,Table de variables standard,DInt,%MD332,
+Rfid_Execute,Table de variables standard,Bool,%M400.0,
+Rfid_Done,Table de variables standard,Bool,%M400.1,
+Rfid_Busy,Table de variables standard,Bool,%M400.2,
+Rfid_Mode,Table de variables standard,UInt,%MW402,
+Rfid_TagRWAddr,Table de variables standard,UInt,%MW404,
+Rfid_Error,Table de variables standard,Bool,%M400.3,
+Rfid_RWLength,Table de variables standard,UInt,%MW406,
+Rfid_Execute_Lecture,Table de variables standard,Bool,%M400.4,
+Rfid_Execute_Ecriture,Table de variables standard,Bool,%M400.5,
+Rfid_Lecture_Tag,Table de variables standard,Bool,%M400.6,
+Rfid_Ecriture_Tag,Table de variables standard,Bool,%M400.7,
+Rfid_Type_Produit,Table de variables standard,Int,%MW408,
+Rfid_Num_Commande,Table de variables standard,Int,%MW410,
+Rfid_Date_AAAA,Table de variables standard,Int,%MW412,
+Rfid_Date_MM,Table de variables standard,Int,%MW414,
+Rfid_Date_JJ,Table de variables standard,Int,%MW416,
+Rfid_Num_Tag,Table de variables standard,Int,%MW418,
+Rfid_Tag_Present,Table de variables standard,Bool,%M401.0,
+Rfid_Option_Active,Table de variables standard,Bool,%M401.1,
+Rfid_RAZ_Saisie,Table de variables standard,Bool,%M401.2,
+Rfid_AAAA_Saisie,Table de variables standard,Int,%MW420,
+Rfid_MM_Saisie,Table de variables standard,Int,%MW422,
+Rfid_JJ_Saisie,Table de variables standard,Int,%MW424,
+Rfid_HH_Saisie,Table de variables standard,Int,%MW426,
+Rfid_MN_Saisie,Table de variables standard,Int,%MW428,
+Rfid_Valider_Date,Table de variables standard,Bool,%M401.3,
+Rfid_Parametre_Date,Table de variables standard,Bool,%M401.4,
+Rfid_Date_Conditionnement,Table de variables standard,Date,%MW430,
+Rfid_Num_Serie_D,Table de variables standard,DInt,%MD432,
+Rfid_Num_Serie_G,Table de variables standard,DInt,%MD436,
+Rfid_Type_prod_lecture,Table de variables standard,Int,%MW440,
+Rfid_Num_com_lecture,Table de variables standard,Int,%MW442,
+Rfid_JJ_lecture,Table de variables standard,Int,%MW444,
+Rfid_MM_lecture,Table de variables standard,Int,%MW446,
+Rfid_AAAA_lecture,Table de variables standard,Int,%MW448,
+Rfid_Num_Tag_Lecture,Table de variables standard,Int,%MW450,
+Rfid_Font_RAZ,Table de variables standard,Bool,%M401.5,
+Rfid_Défaut_Tag,Table de variables standard,Bool,%M401.6,
+Code_Erreur_WTT12,Table de variables standard,Int,%MW168,
+Tag_1,Table de variables standard,Bool,%M256.0,
+Mémo_Reposition,Table de variables standard,Bool,%M304.7,
+Mémo_Mesure_Pot,Table de variables standard,Bool,%M305.0,
+Mémo_produit_Pris,Table de variables standard,Bool,%M305.1,Produit dans le préhenseur
+Dernier_Produit_Pris,Table de variables standard,Int,%MW272,
+Memo_Rack_Vide,Table de variables standard,Bool,%M305.2,
+Mémo_Recherche_pot,Table de variables standard,Bool,%M305.3,
+Index_Rangee_Z,Table de variables standard,Int,%MW274,
+Index_Colonne_X,Table de variables standard,Int,%MW276,
+Front_I2.6,Table de variables standard,Bool,%M305.4,
+front_I2.7,Table de variables standard,Bool,%M305.5,
+Sortir_Vérin_AxeY,Table de variables standard,Bool,%M305.6,
+Rentrer_Vérin_AxeY,Table de variables standard,Bool,%M305.7,
+Position_Pot1_Pot2,Table de variables standard,Int,%MW172,
+Pression_Système,Table de variables standard,Real,%MD174,
+Seuil_Pression_1,Table de variables standard,Bool,%M306.0,
+Seuil_Pression_2,Table de variables standard,Bool,%M306.1,
+Position_Init_Y,Table de variables standard,Bool,%M306.2,
+Front_Init_Coordonnees,Table de variables standard,Bool,%M306.3,
+Front_Z_Atteint,Table de variables standard,Bool,%M50.3,
+Freint_Axe_Z,Table de variables standard,Bool,%M50.4,
+Time_Cadence_Pot,Table de variables standard,DInt,%MD308,
+Cadence_Pots,Table de variables standard,Int,%MW312,
+Aspiration_ON,Table de variables standard,Bool,%M306.4,
+Soufflage_ON,Table de variables standard,Bool,%M306.5,
+Presence_Air,Table de variables standard,Bool,%M306.6,
+Front_Presence_Air,Table de variables standard,Bool,%M306.7,
+Front_Absence_Air,Table de variables standard,Bool,%M307.0,
+Stop_Axe_X,Table de variables standard,Bool,%M504.1,
+Front_Stop_X,Table de variables standard,Bool,%M50.5,
+Axe_Z_Rangé_+1,Table de variables standard,Bool,%M55.4,
+Front_Rangée_+1,Table de variables standard,Bool,%M50.6,
+Mémo_demmande_Acces,Table de variables standard,Bool,%M50.7,
+Mémo_Fin_P_pot,Table de variables standard,Bool,%M51.0,
+Mémo_Fin_G_pot,Table de variables standard,Bool,%M51.1,
+Vitesse_Retour_X,Table de variables standard,Int,%MW336,
+Mémo_En_Pause,Table de variables standard,Bool,%M51.2,
+Pot2_Pris,Table de variables standard,Bool,%M55.5,
+Dernier_Pot,Table de variables standard,Bool,%M55.6,
+Axe_Y_Rentré,Table de variables standard,Bool,%M55.7,
+Supervision_Active,Table de variables standard,Bool,%M31.0,
+Accumulation_Interne,Table de variables standard,Bool,%M321.7,
+Front_Mont_Accu_Interne,Table de variables standard,Bool,%M307.1,
+Front_Desc_Accu_Interne,Table de variables standard,Bool,%M307.2,

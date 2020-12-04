@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} GUI1 {% endblock %}
+
+{% block content %}
+    <h1>Waste Management - GUI2 </h1>
+    <p>Welcome to the Waste Management GUI2</p>
+
+    <table id="variables">
+        <thead>
+        <tr>
+            <th>Name</th><th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key, value in variables.items() %}
+            <tr id={{ key }}>
+                <td class="key">{{ key }}</td><td class="value">
+                <input type={% if value.type is eq("bool") %}"checkbox"{% else %}"text"{% endif %} value={{ value.value }}></td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}

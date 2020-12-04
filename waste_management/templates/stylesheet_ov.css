@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: beige
+}
+
+
+
+div.workshop {
+
+    height: auto;
+    width: 450px;
+    border: 2px solid;
+    margin: 10px;
+    float: left;
+
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+    padding: 30px
+}
+
+h2 {
+    text-align: center;
+    padding: 30px;
+
+}
+
+h3 {
+    color: blue;
+    padding: 30px;
+    text-align: center
+}
+
+th {
+    color: green;
+    padding: 5px;
+    font-size: 20px;
+
+}
+
+td {
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}

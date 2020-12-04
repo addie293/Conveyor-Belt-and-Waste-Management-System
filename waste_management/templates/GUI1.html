@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %} GUI1 {% endblock %}
+
+{% block content %}
+    <h1>Waste Management - GUI1 </h1>
+    <p>Welcome to the Waste Management GUI1</p>
+
+    <table id="variables">
+        <thead>
+        <tr>
+            <th>Name</th><th>Value</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key, value in variables.items() %}
+            <tr id={{ key }}>
+                <td class="key">{{ key }}</td><td class="value">{{ value.value }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}
+
+
+{% block script %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8">
+        let socket = io();
+        socket.on('update_data', function (data) {
+            let jsonData = JSON.parse(data);
+            Object.keys(jsonData).forEach((key) => {
+                    let value = jsonData[key];
+                    let toUp = document.getElementById(key);
+                    if(toUp != undefined){
+                        toUp.childNodes[2].textContent = value['value']
+                    }
+                    else {
+                        // Add a new line ?
+                    }
+                }
+            )
+        });
+
+        setInterval(() => {
+            socket.emit('get_update_data');
+        }, 1000)   // Ask to update the data all the 1 second
+    </script>
+{% endblock %}

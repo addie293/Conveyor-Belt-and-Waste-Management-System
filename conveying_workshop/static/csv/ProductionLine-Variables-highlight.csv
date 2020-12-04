@@ -1,0 +1,28 @@
+Presence_Barq_B4,Table de variables standard,Bool,%I2.4,Trays presence at the picking station
+Verrine_verte_H3,Table de variables standard,Bool,%Q2.0,Marche verrine verte
+Consigne variateur convoyeur,Table de variables standard,Int,%QW4,Variable drive speed drive setpoint for custom pot conveyor
+Consigne vitesse convoyeur,Table de variables standard,Real,%MD200,Input of the speed setpoint of the customised pot conveyor
+Type de produits,Table de variables standard,Int,%MW106,Type of products : smalls pots or big pots
+Alarmes opérateur,Table de variables standard,Int,%MW40,Operator alarms for console
+Défauts,Table de variables standard,Int,%MW42,Critical faults for console
+Alarme opérateur 10 produits consécutifs non conformes,Table de variables standard,Bool,%M40.0,Operator alarm 10 consecutive non-compliant products
+Alarme opérateur bourrage sortie contenants,Table de variables standard,Bool,%M41.0,"Operator Alarm Trigger Bit ""Container Outlet Stuffing"""
+Alarme opérateur Défaut prise produits,Table de variables standard,Bool,%M41.1,"Operator Alarm Trigger Bit ""Failure of the product plug"""
+Alarme opérateur Défaut évacuation produit,Table de variables standard,Bool,%M41.2,"Operator Alarm Trigger Bit ""Product evacuation fault"""
+Alarme opérateur bac échantillons plein,Table de variables standard,Bool,%M41.3,"Operator Alarm Trigger Bit ""Sample container Full"""
+Alarme opérateur défaut manque contenant,Table de variables standard,Bool,%M41.4,"Operator Alarm Trigger Bit ""Failure missing contenant"""
+Alarme opérateur défaut manque produit,Table de variables standard,Bool,%M41.5,"Operator Alarm Trigger Bit ""Failure missing product"""
+Alarme opérateur defaut encodage rfid,Table de variables standard,Bool,%M41.6,"Operator Alarm Trigger Bit ""rfid encoding failure"""
+Alarme opérateur defaut presence rfid,Table de variables standard,Bool,%M41.7,"Operator Alarm Trigger Bit ""rfid presence failure"""
+Défaut défaut Air,Table de variables standard,Bool,%M43.1,"Critical Fault Trigger Bit ""Air failure"""
+Défaut controleur d'axe,Table de variables standard,Bool,%M43.2,"Critical Fault Trigger Bit ""Product conveyor motor fault"""
+Défaut critique moteur convoyeur,Table de variables standard,Bool,%M43.3,"Critical Fault Trigger Bit ""Container conveyor motor fault"""
+Défaut critique Arrêt d'Urgence,Table de variables standard,Bool,%M43.0,"Critical Fault Trigger Bit ""Emergency stop"""
+Valeur compteur produits,Table de variables standard,Int,%MW120,Current value of the products counter for supervision
+Compteur pots,Table de variables standard,Int,%MW322,Pots counters
+Compteur Barquette,Table de variables standard,Int,%MW324,Trays counters
+Consigne vitesse portique,Table de variables standard,Int,%MW326,Speed portal guideline
+Alarme_Accumulation_Aval,Table de variables standard,Bool,%M43.4,Downstream accumulation alarm
+Nombre_d'arret,Table de variables standard,Int,%MW162,Step number
+Duree_Arret_En_Cours,Table de variables standard,Int,%MW164,Current stop duration
+Duree_Arrets_Cumules,Table de variables standard,Int,%MW166,Duration stop cumulative

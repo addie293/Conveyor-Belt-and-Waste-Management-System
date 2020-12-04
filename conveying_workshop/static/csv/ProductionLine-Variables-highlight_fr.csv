@@ -1,0 +1,28 @@
+Presence_Barq_B4,Table de variables standard,Bool,%I2.4,Présence barquette au poste de prise
+Verrine_verte_H3,Table de variables standard,Bool,%Q2.0,Marche verrine verte
+Consigne variateur convoyeur,Table de variables standard,Int,%QW4,Consigne de vitesse variateur convoyeur pots personnalisés
+Consigne vitesse convoyeur,Table de variables standard,Real,%MD200,Saisie de la consigne de vitesse du convoyeur pots personnalisés
+Type de produits,Table de variables standard,Int,%MW106,Type de produits : petits pots ou grands pots
+Alarmes opérateur,Table de variables standard,Int,%MW40,Alarmes opérateur pour pupitre
+Défauts,Table de variables standard,Int,%MW42,Défauts critiques pour pupitre
+Alarme opérateur 10 produits consécutifs non conformes,Table de variables standard,Bool,%M40.0,Alarme opérateur 10 produits consécutifs non conformes
+Alarme opérateur bourrage sortie contenants,Table de variables standard,Bool,%M41.0,"Bit de déclenchement de l'alarme opérateur ""Bourrage sortie contenants"""
+Alarme opérateur Défaut prise produits,Table de variables standard,Bool,%M41.1,"Bit de déclenchement de l'alarme opérateur ""Défaut de la prise produits"""
+Alarme opérateur Défaut évacuation produit,Table de variables standard,Bool,%M41.2,"Bit de déclenchement de l'alarme opérateur ""Défaut évacuation produit"""
+Alarme opérateur bac échantillons plein,Table de variables standard,Bool,%M41.3,"Bit de déclenchement de l'alarme opérateur ""Bac échantillons plein"""
+Alarme opérateur défaut manque contenant,Table de variables standard,Bool,%M41.4,"Bit de déclenchement de l'alarme opérateur ""Défaut manque contenant"""
+Alarme opérateur défaut manque produit,Table de variables standard,Bool,%M41.5,"Bit de déclenchement de l'alarme opérateur ""Défaut manque produit"""
+Alarme opérateur defaut encodage rfid,Table de variables standard,Bool,%M41.6,"Bit de déclenchement de l'alarme opérateur ""defaut encodage rfid"""
+Alarme opérateur defaut presence rfid,Table de variables standard,Bool,%M41.7,"Bit de déclenchement de l'alarme opérateur ""defaut presence rfid"""
+Défaut défaut Air,Table de variables standard,Bool,%M43.1,"Bit de déclenchement du défaut critique ""Défaut Air"""
+Défaut controleur d'axe,Table de variables standard,Bool,%M43.2,"Bit de déclenchement du défaut critique ""Défaut moteur convoyeur produits"""
+Défaut critique moteur convoyeur,Table de variables standard,Bool,%M43.3,"Bit de déclenchement du défaut critique ""Défaut moteur convoyeur contenants"""
+Défaut critique Arrêt d'Urgence,Table de variables standard,Bool,%M43.0,"Bit de déclenchement du défaut critique ""Arrêt d'urgence"""
+Valeur compteur produits,Table de variables standard,Int,%MW120,Valeur courante du compteur produits pour la supervision
+Compteur pots,Table de variables standard,Int,%MW322,
+Compteur Barquette,Table de variables standard,Int,%MW324,
+Consigne vitesse portique,Table de variables standard,Int,%MW326,
+Alarme_Accumulation_Aval,Table de variables standard,Bool,%M43.4,
+Nombre_d'arret,Table de variables standard,Int,%MW162,
+Duree_Arret_En_Cours,Table de variables standard,Int,%MW164,
+Duree_Arrets_Cumules,Table de variables standard,Int,%MW166,

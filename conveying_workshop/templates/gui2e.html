@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %} GUI2 {% endblock %}
+
+{% block content %}
+    <h1>Conveying Workshop - GUI2 </h1>
+    <table id="variables">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+            <th></th>
+            <th>type</th>
+            <th>address</th>
+            <th>comment</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key, value in variables.items() %}
+        <tr id={{ key }}>
+            <td class="key">{{ key }}</td>
+            <td class="value">
+                <input type={% if value.type is eq("Bool") %}"checkbox" {% if value.value is eq(True) %}checked{% endif %}{% else %}"text"{% endif %} value={{ value.value }}>
+            </td>
+            <td>
+                <button onclick="send_data(this)">Send</button>
+            </td>
+            <td class="type">{{ value.type }}</td>
+            <td class="address">{{ value.address }}</td>
+            <td class="comment">{{ value.comment }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block script %}
+    <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf-8">
+        let socket = io();
+        function send_data(elem) {
+            let row = elem.parentNode.parentNode;
+            let data = {
+                "key" : row.id,
+                "value" : row.getElementsByClassName("value").item(0).children.item(0).checked
+            };
+            let toSend = JSON.stringify(data)
+            socket.emit("set_data", toSend);
+
+        }
+
+
+    </script>
+
+
+{% endblock %}
